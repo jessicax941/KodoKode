@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.quizzes.Quiz1Activity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:theme="@style/ActionBarTheme"
+        android:elevation="4dp"
+        app:titleTextColor="@color/DefaultWhite"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <TextView
+        android:id="@+id/quiz_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/start_button"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:text="Quiz 1.\nVariables And Types"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:fontFamily="@font/varela_round_regular"/>
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="15dp"
+        android:text="Start Quiz"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/MediumSeaGreen"
+        android:fontFamily="@font/varela_round_regular"/>
+
+
+</RelativeLayout>

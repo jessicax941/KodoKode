@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "18888034648",
+    "firebase_url": "https://kodokode2.firebaseio.com",
+    "project_id": "kodokode2",
+    "storage_bucket": "kodokode2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:18888034648:android:aa3551461fe4bbfb",
+        "android_client_info": {
+          "package_name": "com.example.kodokode"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "18888034648-4hmm7b1a01qhtfhvgqgmb737k9sllarq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kodokode",
+            "certificate_hash": "0d9a2850bf88ae2d409ca5e0e928927fb48d8035"
+          }
+        },
+        {
+          "client_id": "18888034648-eff3j2mhu1nm72bsg2eb4rgu2jrbqgab.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuYKPM1skjUpwZvgHWpyh6y3CsqHnlrlk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "18888034648-eff3j2mhu1nm72bsg2eb4rgu2jrbqgab.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

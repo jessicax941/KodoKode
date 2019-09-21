@@ -1,0 +1,97 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:textColorHint">@color/colorPrimary</item>
+        <item name="android:editTextColor">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/varela_round_regular</item>
+    </style>
+
+    <!-- Action Bar Theme -->
+    <style name="ActionBarTheme" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:fontFamily">@font/varela_round_regular</item>
+        <item name="android:textColor">@color/DefaultWhite</item>
+        <item name="colorControlNormal">@color/DefaultWhite</item>
+    </style>
+
+    <!-- Normal button theme -->
+    <style name="NormalButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:fontFamily">@font/varela_round_regular</item>
+    </style>
+
+    <!-- Alert Dialog theme -->
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorPrimary</item>
+        <!--<item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>-->
+        <!--<item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>-->
+        <item name="android:fontFamily">@font/varela_round_regular</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/Red</item>
+        <item name="android:textColorAlertDialogListItem">@color/Red</item>
+        <item name="android:colorBackground">@color/DefaultWhite</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/MediumSeaGreen</item>
+        <item name="android:textColorAlertDialogListItem">@color/MediumSeaGreen</item>
+        <item name="android:colorBackground">@color/DefaultWhite</item>
+    </style>
+
+    <!-- Chapter Title Text -->
+    <style name="contentTitleStyle" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/varela_round_regular</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <!-- Chapter Body Text -->
+    <style name="contentBodyStyle" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/varela_round_regular</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <!-- Chapter Example Title Text -->
+    <style name="contentExampleTitleStyle" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/varela_round_regular</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <!-- Chapter Example Code Text -->
+    <style name="contentExampleCodeStyle" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <!-- Bottom Nav Menu Theme -->
+    <style name="BottomNavigationView" parent="Widget.Design.BottomNavigationView">
+        <item name="fontFamily">@font/varela_round_regular</item>
+    </style>
+
+    <!-- Hint Text Appearance Style -->
+    <style name="HintTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/varela_round_regular</item>
+    </style>
+
+</resources>

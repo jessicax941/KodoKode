@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/chapter1fragment2">
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is a variable type?"
+        style="@style/contentTitleStyle" />
+
+    <TextView
+        android:id="@+id/body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=
+            "Variables can hold many different types of values, such as text, whole numbers and numbers that are not whole."
+        style="@style/contentBodyStyle"
+        android:layout_below="@+id/title1" />
+
+    <TextView
+        android:id="@+id/eg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Examples"
+        style="@style/contentExampleTitleStyle"
+        android:layout_below="@+id/body1"/>
+
+    <TextView
+        android:id="@+id/eg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=
+            "   - String variables: 'Hello World', 'apple'\n   - Integer variables: 1, 19, -80\n   - Double variables: 1.0, 0.25, -33.5"
+        style="@style/contentBodyStyle"
+        android:layout_below="@+id/eg1" />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/arrows"
+        android:layout_centerHorizontal="true"
+        android:text="2/5"
+        android:fontFamily="@font/varela_round_regular"
+        android:textColor="#000" />
+
+    <LinearLayout
+        android:id="@+id/arrows"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/left_arrow_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_launcher_left_arrow_background"
+            android:tint="@color/colorPrimary"
+            android:background="@color/White"/>
+
+        <ImageButton
+            android:id="@+id/right_arrow_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_launcher_right_arrow_foreground"
+            android:tint="@color/colorPrimary"
+            android:background="@color/White"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

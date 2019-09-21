@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/chapter1fragment3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More examples"
+                android:fontFamily="@font/varela_round_regular"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:id="@+id/body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Integers"
+                style="@style/contentBodyStyle"
+                android:textStyle="bold"
+                android:layout_below="@+id/title1" />
+
+            <TextView
+                android:id="@+id/body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=
+                    "In the equation 7 + x = 10, the variable x contains the value 3.\nSince 3 is a whole number, x is an integer variable.\n\nIn another equation 48 ÷ z = 6\nz = 48 ÷ 6 = 8\nVariable z contains the value 8.\nSince 8 is a whole number, z is also an integer variable."
+                style="@style/contentBodyStyle"
+                android:layout_below="@+id/body1" />
+            <!--
+            <TextView
+                android:id="@+id/body3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doubles"
+                style="@style/contentBodyStyle"
+                android:layout_below="@+id/body2" />
+
+            <TextView
+                android:id="@+id/body4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=
+                    "Looking at the equation 3 = 10 ÷ z\nz = 10 ÷ 3 = 10/3 or 3.333…\nVariable z contains the value 3.333…\nSince 3.333… is not a whole number, z is a double variable.\n\nAlso, if x = 1.0, is x an integer or double variable?\nYou may think that it's an integer variable because 1.0 is the same as 1 but it's actually a double variable!\n\nIn python, any number with a decimal point is considered a double number. So, by definition, x is a double variable!
+"
+                style="@style/contentBodyStyle"
+                android:layout_below="@+id/body3" />
+                -->
+
+            <TextView
+                android:id="@+id/count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/arrows"
+                android:layout_centerHorizontal="true"
+                android:text="3/5"
+                android:fontFamily="@font/varela_round_regular"
+                android:textColor="#000" />
+
+            <LinearLayout
+                android:id="@+id/arrows"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true">
+
+                <ImageButton
+                    android:id="@+id/left_arrow_button"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_launcher_left_arrow_background"
+                    android:tint="@color/colorPrimary"
+                    android:background="@color/White"/>
+
+                <ImageButton
+                    android:id="@+id/right_arrow_button"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_launcher_right_arrow_foreground"
+                    android:tint="@color/colorPrimary"
+                    android:background="@color/White"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+</RelativeLayout>

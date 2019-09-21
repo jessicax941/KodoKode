@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfileActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:theme="@style/ActionBarTheme"
+        android:elevation="4dp"
+        app:titleTextColor="@color/DefaultWhite"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="25sp"
+        android:textColor="#000"
+        android:text="username"/>
+
+    <!-- circle view image-->
+    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+        <!--android:id="@+id/profile_image"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_below="@id/toolbar"-->
+        <!--android:layout_marginTop="25dp"-->
+        <!--android:src="@drawable/boy_outlined" />-->
+
+    <!-- normal image view -->
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/username"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/boy_outlined" />
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/pick_gender_buttons"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/profile_image"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_margin="10dp">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/pick_gender_text"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:text="Pick gender: "-->
+            <!--android:textColor="@color/colorPrimaryDark"-->
+            <!--/>-->
+
+        <!--<android.support.design.button.MaterialButton-->
+            <!--android:id="@+id/boy_button"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:text="Boy"-->
+            <!--android:textAllCaps="false"-->
+            <!--app:backgroundTint="@color/RoyalBlue"/>-->
+
+        <!--<android.support.design.button.MaterialButton-->
+            <!--android:id="@+id/girl_button"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:text="Girl"-->
+            <!--android:textAllCaps="false"-->
+            <!--app:backgroundTint="@color/HotPink"/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"-->
+        <!--title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>-->
+
+    <!--<ImageButton-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_below="@id/toolbar"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:src="@drawable/edit"/>-->
+
+    <LinearLayout
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/toolbar"
+        android:layout_margin="10dp">
+
+        <!--<ImageView-->
+            <!--android:id="@+id/edit_image"-->
+            <!--android:layout_width="25dp"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:src="@drawable/edit"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/edit_button"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:text="EDIT"-->
+            <!--android:background="@color/colorAccent"-->
+            <!--android:textColor="@color/colorPrimaryDark"-->
+            <!---->
+            <!--android:textSize="18sp"/>-->
+
+        <!--<android.support.design.button.MaterialButton-->
+            <!--android:id="@+id/edit_button"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Edit"-->
+            <!--android:textSize="15sp"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:textColor="@color/colorPrimaryDark"-->
+            <!--app:backgroundTint="@color/DefaultWhite"-->
+            <!--app:strokeColor="@color/colorAccent"-->
+            <!--app:strokeWidth="2dp"/>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Points: x"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/chapters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Chapters Completed: x / 3"
+            android:textColor="#000"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/quizzes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Quizzes Completed: x / 3"
+            android:textColor="#000"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@color/bottom_nav_color"
+        app:itemTextColor="@color/bottom_nav_color"
+        app:itemTextAppearanceActive="@style/BottomNavigationView"
+        app:itemTextAppearanceInactive="@style/BottomNavigationView"/>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="7dp"
+    android:paddingBottom="7dp">
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/chapter_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="10dp"
+        android:text="chapter name"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:fontFamily="@font/varela_round_regular"
+        app:backgroundTint="@color/colorAccent"
+        android:background="@color/colorAccent"
+        android:clickable="false"/>
+
+</RelativeLayout>

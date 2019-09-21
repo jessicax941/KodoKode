@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:theme="@style/ActionBarTheme"
+            android:elevation="4dp"
+            app:titleTextColor="@color/DefaultWhite"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/varela_round_regular"
+            android:text="Welcome To KodoKode"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="center"
+            android:textSize="45sp" />
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/kodokode_circle" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textView1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/signInButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                app:backgroundTint="@color/colorPrimary"
+                android:fontFamily="@font/varela_round_regular"
+                android:text="Sign In"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAllCaps="false"
+                android:textSize="20sp" />
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/newUserButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:fontFamily="@font/varela_round_regular"
+                android:text="Create New Account"
+                android:maxLines="1"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                app:backgroundTint="@color/DefaultWhite"
+                app:strokeWidth="3dp"
+                app:strokeColor="@color/colorPrimary"
+               />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

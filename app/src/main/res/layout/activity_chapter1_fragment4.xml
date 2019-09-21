@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/chapter1fragment4">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assignment of values"
+                style="@style/contentTitleStyle" />
+
+            <TextView
+                android:id="@+id/body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=
+                    "Now that you have learnt variables and their different types, let's learn how to give a variable a value in Python.\n\nYou can assign a value to a variable by using the equality sign (=).\n"
+                style="@style/contentBodyStyle"
+                android:layout_below="@+id/title1" />
+
+            <TextView
+                android:id="@+id/eg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Example"
+                style="@style/contentExampleTitleStyle"
+                android:layout_below="@+id/body1"/>
+
+            <TextView
+                android:id="@+id/eg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Let a be an integer variable.\na = None\nThis statement gives variable a an unknown value (or, a does not hold any value yet)\n\na = 1\nThis statement gives variable a the value 1 (a now holds the value of 1).\n\na = 5\nThe value in variable a changes from 1 to 5."
+                style="@style/contentBodyStyle"
+                android:layout_below="@+id/eg1" />
+
+            <TextView
+                android:id="@+id/count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eg2"
+                android:layout_centerHorizontal="true"
+                android:text="4/5"
+                android:fontFamily="@font/varela_round_regular"
+                android:textColor="#000" />
+
+            <LinearLayout
+                android:id="@+id/arrows"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/count">
+
+                <ImageButton
+                    android:id="@+id/left_arrow_button"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_launcher_left_arrow_background"
+                    android:tint="@color/colorPrimary"
+                    android:background="@color/White"/>
+
+                <ImageButton
+                    android:id="@+id/right_arrow_button"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_launcher_right_arrow_foreground"
+                    android:tint="@color/colorPrimary"
+                    android:background="@color/White"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

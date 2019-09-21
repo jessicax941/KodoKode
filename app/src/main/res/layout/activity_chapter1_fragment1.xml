@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chapter1fragment1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is a variable?"
+        style="@style/contentTitleStyle"/>
+
+    <TextView
+        android:id="@+id/body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A variable is a quantity that can be used to represent any value."
+        style="@style/contentBodyStyle"
+        android:layout_below="@+id/title1"/>
+
+    <TextView
+        android:id="@+id/body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The values of variables can be changed."
+        style="@style/contentBodyStyle"
+        android:layout_below="@+id/body1"/>
+
+    <TextView
+        android:id="@+id/body3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Letters like x and y are commonly used to represent variables."
+        style="@style/contentBodyStyle"
+        android:layout_below="@+id/body2"/>
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/arrows"
+        android:layout_centerHorizontal="true"
+        android:text="1/5"
+        android:fontFamily="@font/varela_round_regular"
+        android:textColor="#000" />
+
+    <LinearLayout
+        android:id="@+id/arrows"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/left_arrow_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_launcher_left_arrow_background"
+            android:tint="@color/LightGrey"
+            android:background="@color/White"/>
+
+        <ImageButton
+            android:id="@+id/right_arrow_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_launcher_right_arrow_foreground"
+            android:tint="@color/colorPrimary"
+            android:background="@color/White"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

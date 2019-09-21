@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AssessmentSection">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:theme="@style/ActionBarTheme"
+        android:elevation="4dp"
+        app:titleTextColor="@color/DefaultWhite"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <TextView
+        android:id="@+id/assessmentWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/toolbar"
+        android:text="@string/assessment_section_start"
+        android:textSize="25sp"
+        android:textColor="#000"
+        android:fontFamily="@font/varela_round_regular"/>
+
+    <TextView
+        android:id="@+id/quizzes_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/assessmentWelcome"
+        android:layout_marginLeft="20dp"
+        android:text="Quzizes Completed: x"
+        android:textColor="#000"
+        android:textSize="18sp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quizzes_count"
+        android:layout_margin="20dp" />
+
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:theme="@style/ActionBarTheme"
+        android:elevation="4dp"
+        app:titleTextColor="@color/DefaultWhite"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <TextView
+        android:id="@+id/question_count"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_below="@+id/toolbar"
+        android:text="Question x/5"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:fontFamily="@font/varela_round_regular"/>
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/question_count"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="@font/varela_round_regular"
+        android:text="Question"
+        android:textColor="#000"
+        android:textSize="30sp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/question"
+        android:layout_margin="15dp"
+        android:buttonTint="@color/colorPrimary">
+
+        <RadioButton
+            android:id="@+id/option_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="option a"
+            android:textSize="20sp"
+            android:fontFamily="@font/varela_round_regular"
+            android:buttonTint="@color/colorPrimary"/>
+
+        <RadioButton
+            android:id="@+id/option_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="option b"
+            android:textSize="20sp"
+            android:fontFamily="@font/varela_round_regular"
+            android:buttonTint="@color/colorPrimary"/>
+
+        <RadioButton
+            android:id="@+id/option_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="option c"
+            android:textSize="20sp"
+            android:fontFamily="@font/varela_round_regular"
+            android:buttonTint="@color/colorPrimary"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_group"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text=""
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:fontFamily="@font/varela_round_regular"/>
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/check_ans_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:padding="15dp"
+        android:text="Check Answer"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="@font/varela_round_regular"
+        android:backgroundTint="@color/MediumSeaGreen"/>
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dp"
+        android:text=""
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp"
+        android:fontFamily="@font/varela_round_regular" />
+
+</RelativeLayout>

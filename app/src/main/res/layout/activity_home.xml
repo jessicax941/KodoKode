@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:theme="@style/ActionBarTheme"
+        android:elevation="4dp"
+        app:titleTextColor="@color/DefaultWhite"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/toolbar"
+        android:text="Welcome, User001"
+        android:textSize="30sp"
+        android:maxLines="1"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="@font/varela_round_regular"
+        />
+
+    <TextView
+        android:id="@+id/pointsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/welcomeText"
+        android:text="Points: x"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="@font/varela_round_regular"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_margin="30dp">
+
+        <Button
+            android:id="@+id/learningButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Learn"
+            android:textSize="40sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAllCaps="false"
+            android:fontFamily="@font/varela_round_regular"
+            android:background="@color/colorAccent2" />
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/assessmentButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Practice"
+            android:textSize="40sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAllCaps="false"
+            android:fontFamily="@font/varela_round_regular"
+            android:background="@color/MediumSeaGreen"
+            app:backgroundTint="@color/MediumSeaGreen"/>
+
+    </LinearLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@color/bottom_nav_color"
+        app:itemTextColor="@color/bottom_nav_color"
+        app:itemTextAppearanceActive="@style/BottomNavigationView"
+        app:itemTextAppearanceInactive="@style/BottomNavigationView"
+        />
+
+</RelativeLayout>
+
